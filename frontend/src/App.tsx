@@ -1,8 +1,13 @@
+import { Container } from "@mui/material";
 import React from "react";
-import SampleCard from "./SampleCard";
+import CardList from "./components/CardList";
 
 const App: React.FC = () => {
-  return <SampleCard />;
+  return (
+    <Container maxWidth="md">
+      <CardList />
+    </Container>
+  );
 };
 
 export default App;
