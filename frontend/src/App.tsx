@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { Layout } from "antd"
+import CardList from "./components/CardList"
+import SampleCard from "./components/SampleCard"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const { Content, Footer, Header, Sider } = Layout
+
+const bgColor: { backgroundColor: string } = {
+  backgroundColor: "white",
 }
 
-export default App;
+const App: React.FC = () => {
+  return (
+    <Layout>
+      <Header style={bgColor} />
+      <Layout>
+        <Sider breakpoint="sm" theme="light" />
+        <Content style={bgColor}>
+          <CardList />
+          <SampleCard />
+        </Content>
+        <Sider breakpoint="sm" theme="light" />
+      </Layout>
+      <Footer style={bgColor} />
+    </Layout>
+  )
+}
+
+export default App
