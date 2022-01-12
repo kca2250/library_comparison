@@ -6,12 +6,13 @@
 
 `frontend`ディレクトリが作成される
 
+#### 3 `npm install`
 
-#### 3 ` docker exec -it node sh `
+#### 4 ` docker exec -it node sh `
 
 コンテナ内部に入り任意の`npm`パッケージをインストール
 
-#### 4 ` ocker-compose down `
+#### 5 ` docker-compose down `
 
 コンテナ終了
 
