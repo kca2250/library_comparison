@@ -8,6 +8,7 @@
 直近2年間の人気度を表しています。
 圧倒的人気は`Material UI`で一番人気がないのは`Chakra UI`という結果になりました
 
+#### 3 `npm install`
 
 ## npm statsで比較してみる
 
